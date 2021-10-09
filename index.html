@@ -1,54 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacker Times</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta <title>Hacker Times</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+		/* 
+      remember to be explcit
+      use classes, ids, etc so you don't conflict
+
+    */
+		body {
+			background-color: #ddd;
+		}
+
+		ul {
+			list-style-type: none;
+			text-align: center;
+			border-bottom: 1px solid #777;
+			border-top: 1px solid #777
+		}
+
+		nav li {
+			display: inline;
+		}
+
+		/* might want to be more specific now that we have a footer*/
+		nav li a {
+			text-decoration: none;
+			color: #777;
+			font-family: Roboto Slab;
+			font-size: 0.8em;
+			padding-left: 0.3em;
+		}
+
+		header {
+			font-family: Abril Fatface;
+		}
+
+		.newspaper-container {
+			width: 700px;
+			border-radius: 30px;
+			box-shadow: 10px 10px 10px #ddd;
+			padding: 30px;
+			margin: auto;
+			background-color: white;
+		}
+
+
+		h1 {
+			text-align: center;
+			font-faimly: Roboto Slab;
+		}
+
+		main h2 {
+			font-family: Roboto Slab;
+		}
+
+		main img {
+			width: 100%;
+		}
+
+		main p {
+			font-family: Source Sans Pro;
+			color: #777;
+			margin-left: 0.5em;
+			margin-right: 0.4em;
+		}
+
+		main h5 {
+			color: #dd3232;
+		}
+
+
+		#hfour-article-two {
+			text-align: left;
+			font-faimly: Roboto Slab;
+
+		}
+
+		.tabs-spacesarticle {
+			display: inline-block;
+			width: 49%;
+			float: left;
+		}
+
+		.tabs-spacesarticle p {
+			color: #777;
+			font-family: Source San Pro;
+		}
+
+		.caffeine-article h4 {
+			font-family: Roboto Slab;
+
+		}
+
+		.caffeine-article p {
+			color: #777;
+			font-family: Source San Pro;
+		}
+
+		footer {
+			text-align: center;
+		}
+
+		.weather-icon {
+			float: right;
+			letter-spacing: 0.15em;
+
+
+		}
+	</style>
 </head>
+
+
 <body>
-  <!-- NEWSPAPER CONTAINER -->
-  <div class="newspaper-container">
-    <!-- header -->
-    <header>
-      <div class="date">JANUARY 1, 1970</div>
-      <h1>The Hacker Times</h1>
-    </header>
-    <!-- navigation -->
-    <nav>
-      <ul>
-        <li><a href="#">HTML & CSS</a></li>
-        <li><a href="#">UX & UI</a></li>
-        <li><a href="#">JAVASCRIPT</a></li>
-        <li><a href="#">EXPRESS</a></li>
-        <li><a href="#">MONGODB</a></li>
-        <li><a href="#">REACT</a></li>
-        <li><a href="#">CYBERSECURITY</a></li>
-        <li><a href="#">PYTHON</a></li>
-      </ul>
-    </nav>
-    <!-- front page article -->
-    <main>
-      <h2>Have You Tried Turning It On and Off Again?</h2>
-      <h5>By Maurice Moss</h5>
-      <img src="assets/front-page-article.png" alt="placeholder">
+	<!-- NEWSPAPER CONTAINER -->
+	<div class="newspaper-container">
+		<!-- header -->
+		<header>
+			<span class="date">JANUARY 1, 1970
+      </span>
+      <div class="weather-icon">
+        <span>☁️</span>
+        66<sup>o</sup>F    
+      </div>
+    
+			<h1>The Hacker Times</h1>
+			
+		</header>
+		<!-- navigation -->
+		<nav>
+			<ul>
+				<li><a href="#">HTML & CSS</a></li>
+				<li><a href="#">UX & UI</a></li>
+				<li><a href="#">JAVASCRIPT</a></li>
+				<li><a href="#">EXPRESS</a></li>
+				<li><a href="#">MONGODB</a></li>
+				<li><a href="#">REACT</a></li>
+				<li><a href="#">CYBERSECURITY</a></li>
+				<li><a href="#">PYTHON</a></li>
+			</ul>
+		</nav>
+		<!-- front page article -->
+		<main>
+			<h2>Have You Tried Turning It On and Off Again?</h2>
+			<h5>By Maurice Moss</h5>
+			<img src="assets/front-page-article.png" alt="placeholder">
       <p>
         Cupcake ipsum dolor sit amet. Candy gummies jelly-o pie toffee cheesecake pastry cake. Soufflé sesame snaps tootsie roll jelly-o soufflé tart gummies. Dessert lollipop halvah brownie chocolate bar gingerbread. Lollipop chocolate bar dragée jelly-o cookie tiramisu icing. Dragée muffin marshmallow jelly beans jelly beans. Tootsie roll pie cheesecake. Brownie biscuit gingerbread cupcake sweet roll sweet jelly-o cookie pie. Lemon drops topping lemon drops jelly beans toffee. Tiramisu cotton candy pie toffee cake chocolate cake apple pie. Cupcake bear claw donut apple pie halvah sesame snaps macaroon tootsie roll
         </p>
     </main>
     <!-- more articles -->
-    <div class="more-articles">
+    <div class="tabs-spacesarticle">
       <section>
-        <h4>Tabs vs. Spaces</h4>
+        <h4 id="hfour-article-two">Tabs vs. Spaces</h4>
         <img src="assets/article-one.png" alt="placeholder">
         <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
       </section>
+    </div>
+    <div class = "caffeine-article">  
       <section>
-        <h4>How Much Caffeine Is Too Much?</h4>
-        <img src="assets/article-two.png" alt="placeholder">
-        <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
+          <h4>How Much Caffeine Is Too Much?</h4>
+          <img src="assets/article-two.png" alt="placeholder">
+          <p>Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</p>
       </section>
     </div>
+    <!-- Bonus 
+    The editor-in-chief wants space for more articles. Try to add another section at the bottom with three articles in a row.
+    You can achieve this look the same way you did with the two articles, but if you are hungry for more, consider using the CSS grid instead.
+    
+    Add a footer at the bottom with links to learn about the company, careers, etc. Visit other newspaper sites to see what they have in their footers.
+    This newspaper design was heavily inspired by The New York Times. Visit its site and try to incorporate more of its design elements into The Hacker Times.
+    -->
+    <div class = "extra-articles">
+      <section>
+        <h4>Bonus</h4>
+        <img src="assets/article-one.png" 
+        alt="placeholder">
+        <h4>Extra</h4>
+        <article id= "extra-one">Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</article>
+        <h4>Extra</h4>
+        <article id= "extra-two">Cupcake ipsum dolor sit amet. Candy gummies jelly-o pie toffee cheesecake pastry cake. Soufflé sesame snaps tootsie roll jelly-o soufflé tart gummies. Dessert lollipop halvah brownie chocolate bar gingerbread. Lollipop chocolate bar dragée jelly-o cookie tiramisu icing. Dragée muffin marshmallow jelly beans jelly beans. Tootsie roll pie cheesecake. Brownie biscuit gingerbread cupcake sweet roll sweet jelly-o cookie pie. Lemon drops topping lemon drops jelly beans toffee. Tiramisu cotton candy pie toffee cake chocolate cake apple pie. Cupcake bear claw donut apple pie halvah sesame snaps macaroon tootsie roll</article>
+       <h4>Extra</h4>
+        <article id= "extra-three">Lemon drops tiramisu sesame snaps oat cake marshmallow sugar plum liquorice. Tootsie roll pastry cake gummi bears pastry toffee tootsie roll candy. Pastry sesame snaps wafer liquorice. Gummies macaroon tiramisu jelly beans soufflé brownie ...</article>
+      </section>  
+    </div>
+    <hr/>
+    <footer>
+      <div>© 2021 The Hacker Times</div>
+      <nav>
+        <li><a href="#">Company</li>
+        <li><a href="#">Contact Us</li>
+        <li><a href="#">Privacy Policy</li>
+        <li><a href="#">Terms of Service</li>
+        <li><a href="#">Site Map</li>
+        <li><a href="#">Help</li>
+        <li><a href="#">Subscriptions</li>
+      </nav>
+    </footer>
+    
   </div>
+
+    
 </body>
 </html>
