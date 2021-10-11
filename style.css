@@ -44,7 +44,7 @@
 
 		h1 {
 			text-align: center;
-			font-faimly: Roboto Slab;
+			font-family: Roboto Slab;
 		}
 
 		main h2 {
@@ -69,12 +69,11 @@
 
 		#hfour-article-two {
 			text-align: left;
-			font-faimly: Roboto Slab;
+			font-family: Roboto Slab;
 
 		}
 
 		.tabs-spacesarticle {
-			display: inline-block;
 			width: 49%;
 			float: left;
 		}
@@ -94,6 +93,11 @@
 			font-family: Source San Pro;
 		}
 
+		.caffeine-article {
+			width: 49%;
+			float: right;
+		}
+
 		footer {
 			text-align: center;
 		}
@@ -104,3 +108,53 @@
 
 
 		}
+
+		/* below i am trying to center the last image, but it is not working correctly */
+
+		#last-image {
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+ 			width: 50%;
+
+		}
+
+		#extra-one {
+			color: #777;
+			font-family: Source San Pro;
+
+		}
+
+		#extra-two {
+			color: #777;
+			font-family: Source San Pro;
+
+		}
+
+		#extra-three {
+			color: #777;
+			font-family: Source San Pro;
+
+		}
+
+		#head1 {
+			text-align: left;
+			font-family: Roboto Slab;
+
+
+		}
+		
+		#head2 {
+			text-align: left;
+			font-family: Roboto Slab;
+
+
+		}
+
+		#head3 {
+			text-align: left;
+			font-family: Roboto Slab;
+
+
+		}
+	
